@@ -2,10 +2,12 @@
   "name": "organizador-fiuba",
   "version": "0.1.0",
   "description": "Te ayuda a organizar los horarios en un calendario semanal, mostrando superposiciones y permitiendo probar distintas combinaciones de cursos rápidamente.",
-  "main": "js/desktop-app.js",
+  "productName": "Organizador FIUBA",
+  "main": "app/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --platform=linux,darwin,win32 --arch=all --out=packages"
+    "pack": "build --dir",
+    "dist": "build -mwl --x64 --ia32"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,15 @@
     "url": "https://github.com/lugfi/organizador-fiuba/issues"
   },
   "homepage": "https://github.com/lugfi/organizador-fiuba",
+  "build": {
+    "appId": "ar.uba.fi.lug.organizador-fiuba",
+    "app-category-type": "your.app.category.type",
+    "win": {
+      "iconUrl": "(windows-only) https link to icon"
+    }
+  },
   "devDependencies": {
+    "electron-builder": "^5.22.2",
     "electron-packager": "^7.5.1",
     "electron-prebuilt": "^1.3.0"
   }

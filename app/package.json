@@ -1,0 +1,16 @@
+{
+  "name": "organizador-fiuba",
+  "version": "0.1.0",
+  "description": "Te ayuda a organizar los horarios en un calendario semanal, mostrando superposiciones y permitiendo probar distintas combinaciones de cursos rápidamente.",
+  "productName": "Organizador FIUBA",
+  "author": {
+    "name" : "LUGFI",
+    "email" : "example@mail.com",
+    "url" : "https://github.com/lugfi"
+  },
+  "main": "main.js",
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build"
+  }
+}

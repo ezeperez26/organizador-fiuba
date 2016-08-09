@@ -39,3 +39,6 @@ jspm_packages
 
 # Generated packages
 packages
+
+# Generated packages
+dist
